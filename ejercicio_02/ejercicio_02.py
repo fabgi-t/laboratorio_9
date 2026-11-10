@@ -54,17 +54,17 @@ def contar_desde_limite_iterativo(valores, limite):
 # Preguntas de análisis (responde debajo de cada pregunta)
 # ---------------------------------------------------------------------
 # 1. ¿Qué representa el parámetro i?
-#
+#       el indice de la lista desde donde se empieza a contar
 #
 # 2. ¿Qué cantidad disminuye a medida que aumenta i?
-#
+#       disminiuyen los indices de la lista por recorrer
 #
 # 3. ¿Qué devuelve una llamada si el elemento actual no cumple la condición?
-#
+#       va al siguiente indice
 #
 # 4. ¿Qué diferencia hay entre la información pendiente de la versión
 #    recursiva y la de la iterativa?
-#
+#       en la recursiva, la información pendiente es la posición actual y el contador,
 #
 
 
