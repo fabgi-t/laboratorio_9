@@ -25,26 +25,33 @@ Restricciones
 - La solución debe ser recursiva.
 """
 
-
 def potencia(base, exponente):
-    pass
+
+    print(f"Calculando {base}^{exponente}")
+    if exponente == 0:
+        return 1
+    return base * potencia(base, exponente - 1)
 
 
-# ---------------------------------------------------------------------
-# Preguntas de análisis (responde debajo de cada pregunta)
-# ---------------------------------------------------------------------
-# 1. ¿Cuál es el caso base?
-#
-#
-# 2. ¿Qué argumento cambia en cada llamada?
-#
-#
-# 3. ¿Qué operación queda pendiente mientras se resuelve la llamada recursiva?
-#
-#
-# 4. Escribe las llamadas y los retornos de potencia(3, 3).
-#
-#
+
+print(potencia)
+
+"""
+ ---------------------------------------------------------------------
+ Preguntas de análisis (responde debajo de cada pregunta)
+ ---------------------------------------------------------------------
+ 1. ¿Cuál es el caso base?
+       cuando es 0
+
+ 2. ¿Qué argumento cambia en cada llamada?
+       exponente
+
+ 3. ¿Qué operación queda pendiente mientras se resuelve la llamada recursiva?
+       if exponente == 0, return 1
+
+ 4. Escribe las llamadas y los retornos de potencia(3, 3).
+"""
+
 
 if __name__ == "__main__":
     print(potencia(2, 4))    # 16
